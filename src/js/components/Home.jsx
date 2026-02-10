@@ -20,9 +20,11 @@ const Home = () => {
       <div className="bg-primary w-75 text-center">
         <div className="row border">
           <div className="col-3 bg-danger border rounded">
-            hi
+            <Digits value={Math.floor(counter % 10000 / 1000)} />
           </div>
-          <div className="col-3 bg-danger border rounded">hi</div>
+          <div className="col-3 bg-danger border rounded">
+			<Digits value={Math.floor(counter % 1000 / 100)} />
+		  </div>
           <div className="col-3 bg-danger border rounded">
 			<Digits value={Math.floor(counter % 100 / 10)} />
 		  </div>
