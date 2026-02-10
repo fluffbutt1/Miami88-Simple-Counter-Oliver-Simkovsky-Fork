@@ -18,7 +18,9 @@ const Home = () => {
 
   return (
     <div>
-      <div className="text-center"><Header /></div>
+      <div className="text-center">
+        <Header />
+      </div>
 
       <div className="d-flex flex-column align-items-center">
         <div className="bg-primary w-75 text-center">
@@ -38,9 +40,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-	  <div className="d-flex justify-content-center">
-		<Banana />
-	  </div>
+      <div className="d-flex justify-content-center">
+        <Banana />
+      </div>
     </div>
   );
 };
